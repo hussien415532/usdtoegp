@@ -4,7 +4,7 @@ fetch(
 )
   .then((data) => {
     let mydata = data.json();
-    return mydata;
+    return mydata; 
   })
   .then((mydata) => {
     let price = document.querySelector("div p span");
