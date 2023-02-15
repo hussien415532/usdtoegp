@@ -11,6 +11,10 @@ fetch(
     let input = document.querySelector("input");
     input.oninput = function () {
       let data = input.value;
+      if(data <= 0)
+      {
+        return false;
+      }
       price.innerHTML = Math.round(data * mydata.rates.EGP);
     };
   });
